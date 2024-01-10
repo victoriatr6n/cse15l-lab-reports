@@ -95,6 +95,7 @@ The working directory is /home when the command is run. The output is "cat: lect
 3. An example of using this command with a path to a file as an argument is:
 ```
 {
+
   [user@sahara ~/lecture1]$ cat Hello.java
   import java.io.IOException;
   import java.nio.charset.StandardCharsets;
@@ -108,6 +109,7 @@ The working directory is /home when the command is run. The output is "cat: lect
     }
   }[user@sahara ~/lecture1]$ pwd
   /home/lecture1
+
 }
 ```
 The working directory when the command is run is /home/lecture1. The output is the contents of the file we passed as an argument for cat, which was Hello.java. The output is all the lines in the Hello.java file. This output is not an error. 
