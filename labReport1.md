@@ -7,7 +7,6 @@
   /home
 }
 ```
-
 The working directory was `/home` when the command was run. 
 When there are no arguments, we have not specified which directory we want to change to. Because the command line has no arguments, just the `cd` command, the default is to change the directory to the home directory. There is also no output because we merely changed the directory. The output was not an error.
 
