@@ -70,7 +70,7 @@ The working directory was `/home` when the command was run. The file `Hello.java
 
 # `cat`
 1. An example of using this command with no arguments is:
-   
+  
 ```
 {
   [user@sahara ~]$ cat
