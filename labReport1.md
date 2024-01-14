@@ -66,10 +66,11 @@ The working directory was `/home` when the command was run. The output is `Hello
   [user@sahara ~]$ 
 }
 ```
-The working directory was `/home` when the command was run. The file `Hello.java` that is passed in as an argument is not a directory, so there were no files or folders to list. The output is an error because `ls` only works with directories. The argument passed into the `ls` command was a file, so the command could not access it. 
+The working directory was `/home` when the command was run. The file `Hello.java` passed in as an argument is not a directory, so there were no files or folders to list. The output is an error because `ls` only works with directories. The argument passed into the `ls` command was a file, so the command could not access it. 
 
 # `cat`
 1. An example of using this command with no arguments is:
+
 ```
 {
   [user@sahara ~]$ cat
@@ -78,7 +79,8 @@ The working directory was `/home` when the command was run. The file `Hello.java
 ```
 The working directory was `/home` when the command was run. The output is a blank line because there were no arguments, so there were no files to concatenate and print out. This output is not an error. 
 
-2. An example of using this command with a path to a directory as an argument is: 
+2. An example of using this command with a path to a directory as an argument is:
+
 ```
 {
   [user@sahara ~]$ cat lecture1
@@ -89,7 +91,8 @@ The working directory was `/home` when the command was run. The output is a blan
 ```
 The working directory is `/home` when the command is run. The output is `cat: lecture: Is a directory` because we passed in a directory as the argument, but the `cat` command takes in files as arguments. This output is an error because only files can get concatenated by the `cat` command.
 
-3. An example of using this command with a path to a file as an argument is:   
+3. An example of using this command with a path to a file as an argument is:
+
 ```
 {
 
