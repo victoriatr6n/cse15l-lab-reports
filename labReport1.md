@@ -55,7 +55,7 @@ The working directory was `/home` when the command was run. The output is `lectu
   /home
 }
 ```
-The working directory was `/home` when the command was run. The output is "Hello.class Hello.java messages README" because these are the names of the files and folders located in the `lecture1` directory, which was the directory passed in as an argument to the `ls` command. This output is not an error.
+The working directory was `/home` when the command was run. The output is `Hello.class Hello.java messages README` because these are the names of the files and folders located in the `lecture1` directory, which was the directory passed in as an argument to the `ls` command. This output is not an error.
 
 3. An example of using this command with a path to a file as an argument is:
 ```
@@ -90,7 +90,7 @@ The working directory was `/home` when the command was run. The output is a blan
   /home
 }
 ```
-The working directory is `/home` when the command is run. The output is "cat: lecture: Is a directory" because we passed in a directory as the argument, but the `cat` command takes in files as arguments. This output is an error because only files can get concatenated by the `cat` command.
+The working directory is `/home` when the command is run. The output is `cat: lecture: Is a directory` because we passed in a directory as the argument, but the `cat` command takes in files as arguments. This output is an error because only files can get concatenated by the `cat` command.
 
 3. An example of using this command with a path to a file as an argument is:
    
