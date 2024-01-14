@@ -70,6 +70,8 @@ The working directory was `/home` when the command was run. The file `Hello.java
 
 # `cat`
 1. An example of using this command with no arguments is:
+2. An example of using this command with a path to a directory as an argument is:
+3. An example of using this command with a path to a file as an argument is:
 
 ```
 {
