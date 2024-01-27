@@ -77,7 +77,7 @@ The working directory was `/home` when the command was run. The file `Hello.java
    
 }
 ```
-The working directory was `/home` when the command was run. The output is a blank line because there were no arguments, so there were no files to concatenate and print out. This output is not an error. 
+The working directory was `/home` when the command was run. The output is a blank line because there were no arguments, so there were no files to concatenate and print out. When the command is run without arguments and the user types something and presses the `enter` key, it will print the word(s) they typed on a new line. This is because when there are no arguments, `cat` will read the input the user types in the terminal and print that. It will continue doing this unless the user manually escapes, so this output is technically an error. To escape this, use `control + c`. 
 
 2) An example of using this command with a path to a directory as an argument is:
 
