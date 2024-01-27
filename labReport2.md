@@ -1,4 +1,6 @@
-# `ChatServer` Implementation
+# Part 1 
+# `ChatServer` Implementation 
+(in ChatServer.java file)
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -6,7 +8,7 @@ import java.net.URI;
 class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
-    String s1;
+    String output;
     public String handleRequest(URI url) { 
         if(url.getPath().equals("/")){
             return "Nothing inputed";
@@ -19,8 +21,8 @@ class Handler implements URLHandler {
             String onlyUser = userArray[userArray.length-1];
             String nString = String.format("%s: %s \n", onlyUser, onlyMessage);
 
-            s1 = s1+ nString + "\n";
-            return s1;
+            output = output+ nString + "\n";
+            return output;
                 
         }
         return "404 Not Found!";
@@ -40,7 +42,8 @@ class ChatServer {
     }
 }
 ```
-# `Server` Code
+# `Server` Code 
+(in `Server.java` file)
 ```
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -93,5 +96,17 @@ public class Server {
 }
 ```
 # Using `/add-message`
-1) Home path
-2) 
+1. One message and one user
+   ![Image](oneTime.jpeg)
+   When this path is used, the method `handleRequest` in the `ChatServer` file is run.
+   The relevant argument of the method is `URI url`, and the values of the String field `output` is "", so it is blank when the `handleRequest` method is first run.
+   The value of `output` gets updated to `java: hello word` as a result of this request.
+3. Two messages and two users
+   ![Image](twoTimes.jpeg)
+   When this path is used, the method `handleRequest` in the `ChatServer` file is run.
+   The relevant argument of the method is `URI url`, and the values of the String field `output` is `java: hello word`, from the previous request.
+
+# Part 2
+# Part 3
+
+Something I learned from lab in week 3 is that you can run the command `man + [command]` to find the manual for the command that you want to find out more information about.  
