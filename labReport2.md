@@ -111,6 +111,13 @@ public class Server {
    
 
 # Part 2
+1. Absolute path to the private key
+   ![Image](private.jpeg)
+2. Absolute path to the public key
+   ![Image](public.jpeg)
+3. Log into my ieng6 account without being asked for a password.
+   ![Image](logIn.jpeg)
+   
 # Part 3
 
 Something I learned from lab in week 3 is that you can run the command `man + [command]` to find the manual for the command that you want to find out more information about.  
