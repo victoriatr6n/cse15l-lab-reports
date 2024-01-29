@@ -19,9 +19,9 @@ class Handler implements URLHandler {
             String onlyMessage = messageArray[1];
             String[] userArray = afterAnd[1].split("user=");
             String onlyUser = userArray[userArray.length-1];
-            String nString = String.format("%s: %s \n", onlyUser, onlyMessage);
+            String newString = String.format("%s: %s \n", onlyUser, onlyMessage);
 
-            output = output+ nString + "\n";
+            output = output+ newString + "\n";
             return output;
                 
         }
@@ -43,7 +43,7 @@ class ChatServer {
 }
 ```
 # `Server` Code 
-(in `Server.java` file)
+(in `Server.java` file from previous labs)
 ```
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -99,12 +99,16 @@ public class Server {
 1. One message and one user
    ![Image](oneTime.jpeg)
    When this path is used, the method `handleRequest` in the `ChatServer` file is run.
-   The relevant argument of the method is `URI url`, and the values of the String field `output` is "", so it is blank when the `handleRequest` method is first run.
-   The value of `output` gets updated to `java: hello word` as a result of this request.
+   The relevant argument of the method is `URI url`, which gets the URL from the server with the path and query appended to it. The value of the String field `output` is "", so it is blank when the `handleRequest` method is first run.
+   The String `newString` is initiated with the formatted String of the user and the message, so it stores `java: hello word`. The value of `output` gets updated to the `newString` and a new line due to this request.
 3. Two messages and two users
    ![Image](twoTimes.jpeg)
    When this path is used, the method `handleRequest` in the `ChatServer` file is run.
-   The relevant argument of the method is `URI url`, and the values of the String field `output` is `java: hello word`, from the previous request.
+   The relevant argument of the method is `URI url`, which gets the URL from the server with the path and query appended to it. The value of the String field `output` is `java: hello word`, from the previous request. The String `newString` gets initiated to store `python: did you mean hello world?`.
+   The value of `output` gets updated to:
+       `java: hello word \n
+       python: did you mean hello world?`
+   
 
 # Part 2
 # Part 3
