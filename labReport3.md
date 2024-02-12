@@ -7,7 +7,7 @@
     }
   }
 ``
-# Failure inducing input:
+## Failure inducing input:
 ``
 @Test
   public void testReverseInPlaceDoesntWork(){
@@ -16,7 +16,7 @@
     assertArrayEquals(new int[]{3,2,1}, input); 
   }
 ``
-# Input that doesn't induce a failure:
+## Input that doesn't induce a failure:
 ``
 @Test 
 	public void testReverseInPlace() {
@@ -25,10 +25,10 @@
     assertArrayEquals(new int[]{ 3 }, input1);
 	}
 ``
-# Symptom:
+## Symptom:
 
 
-# Bug and Fix:
+## Bug and Fix:
 Original code with bug:
 ``
  static void reverseInPlace(int[] arr) {
@@ -49,3 +49,5 @@ Fixed code:
   }
 ``
 The bug in the code is that the `reversedInPlace` method loses the first element of the original array, so once the for loop gets to the last element, it will set it to the first element of the updated array, which is the last element of the original array. To fix this bug, make a variable `int firstElement = arr[0];` before the for loop. Then, iterate up until the second to last element, so the condition in the for loop should be `i< arr.length -1;` after the for loop completely iterates, set `arr[arr.length-1] = firstElement;` This will make sure that the original first element gets saved and then added back to the reversed array.
+
+
