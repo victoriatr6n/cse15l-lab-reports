@@ -114,7 +114,7 @@ public class Server {
 1. Absolute path to the private key
    ![Image](private.jpeg)
 2. Absolute path to the public key
-   ![Image](public.jpeg)
+   ![Image](revise.jpeg)
 3. Log into my ieng6 account without being asked for a password.
    ![Image](logIn.jpeg)
    
