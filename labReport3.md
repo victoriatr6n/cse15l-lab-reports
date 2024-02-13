@@ -52,7 +52,7 @@ The bug in the code is that the `reversedInPlace` method loses the first element
 
 # Part 2
 `find` 
-command-line options (Source: https://www.redhat.com/sysadmin/linux-find-command):
+command-line options ([Source](https://www.redhat.com/sysadmin/linux-find-command)):
 
 `-name`
 
