@@ -2,7 +2,7 @@
 ## Part 1
 ## 1. Student EdStem Post
 
-# Error in testing for filter method 
+**Error in testing for filter method**
 
 Hello,
 I am working on the Filter assignment. Professor Politz assigned me to create a filter method using a String Checker that checks for the letter "a" in a given list. 
