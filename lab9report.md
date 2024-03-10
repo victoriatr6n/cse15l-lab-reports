@@ -3,20 +3,20 @@
 ## 1. Student EdStem Post
 
 # Error in testing for filter method 
-`
+
 Hello,
 I am working on the Filter assignment. Professor Politz assigned me to create a filter method using a String Checker that checks for the letter "a" in a given list. 
 I fixed the errors in the filter implementation that Professor Politz covered in class, but for some reason my tests are not running properly. I'm not sure if it has something to do
 with my bash script or the testing file itself. I think it may be the bash script so I will include a screenshot below.
-`
+
 
 ## 2. Response from TA
-`There are a couple of things that can be causing your issue. Revisit your notes to make sure you are using `*` correctly when trying to expand Java files. Also, recall the difference between 
+There are a couple of things that can be causing your issue. Revisit your notes to make sure you are using `*` correctly when trying to expand Java files. Also, recall the difference between 
 the commands for compiling and running Java files. When running files, do you need the full file name or just the name of the class?
-`
+
 ## 3. Response from Student
-`Thank you, I was able to fix the bug. I was using `.*java` instead of `*.java`, and I forgot that I do not need the `.java` extension when running Java files. I believe that is why my tests
-were not running properly and why it was giving me that `java.lang.IllegalArgumentException: Could not find class [TestListExamples.java]` exception. All my tests are passing now.`
+Thank you, I was able to fix the bug. I was using `.*java` instead of `*.java`, and I forgot that I do not need the `.java` extension when running Java files. I believe that is why my tests
+were not running properly and why it was giving me that `java.lang.IllegalArgumentException: Could not find class [TestListExamples.java]` exception. All my tests are passing now.
 
 ## 4. Set Up
 This is the `ListExamples.java` file with the `filter` method implementation. 
