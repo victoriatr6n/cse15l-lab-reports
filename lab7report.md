@@ -7,7 +7,7 @@ The `ssh vit019@ieng6.ucsd.edu` command was 2 up in my terminal history, so I us
 This command logs into my ieng6 account.
 
 ## Step 5: Clone your fork of the repository from your Github account
-![Image](clone.jpeg)
+![Image](sshclone.jpeg)
 Keys pressed: `<g><i><t><space><c><l><o><n><e><space><Command><V><enter>`
 I first copied my `SSH` url using `Command-C` from my forked github repository. Then typed `git clone` and used `Command-V` to paste the `SSH` url. Then pressed `<enter>` 
 These commands clone the github repository into the ieng6 account.
@@ -33,6 +33,8 @@ The `bash test.sh` command was 2 up in my terminal history, so I used the up arr
 
 ## Step 9: Commit and push the resulting change to your Github account
 ![Image](commit.jpeg)
-Keys pressed: `<g><i><t><space><a><d><d><space<L><tab><.><tab><enter><g><i><t><space><c><o><m><m><i><t><space><-><m><space><"><f><i><x><e><d><space><e><r><r><o><r><s>"`
+![Image](gitpush.jpeg)
+Keys pressed: `<g><i><t><space><a><d><d><space<L><tab><.><tab><enter><g><i><t><space><c><o><m><m><i><t><space><-><m><space><"><f><i><x><e><d><space><e><r><r><o><r><s><"><enter><g><i><t><space><p><u><s><h><space><o><r><i><g><i><n><space><m><a><i><n><enter>`
 The `git add ListExamples.java` command selects the file given and prepares it to get committed. 
 The `git commit -m "fixed error"` commits the changes in the file `ListExample.java` to the main branch with the comment `"fixed error"`
+The `git push origin main` command pushes the changes I made locally in the `ListExamples.java` file to the remote repository in GitHub. It will go to the main branch.
