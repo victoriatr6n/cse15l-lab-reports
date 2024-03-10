@@ -42,4 +42,4 @@ Keys pressed: `<g><i><t><space><a><d><d><space<L><tab><.><tab><enter><g><i><t><s
 
 The `git add ListExamples.java` command selects the file given and prepares it to get committed. 
 The `git commit -m "fixed error"` commits the changes in the file `ListExample.java` to the main branch with the comment `"fixed error"`
-The `git push origin main` command pushes the changes I made locally in the `ListExamples.java` file to the remote repository in GitHub. It will go to the main branch.
+The `git push origin main` command pushes the changes I made locally in the `ListExamples.java` file to the main branch of the remote repository in GitHub.
