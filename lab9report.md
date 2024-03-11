@@ -7,7 +7,7 @@
 Hello,
 I am working on the Filter assignment. Professor Politz assigned me to create a filter method using a String Checker that checks for the letter "a" in a given list. 
 I fixed the errors in the filter implementation that Professor Politz covered in class, but for some reason my tests are not running properly. I'm not sure if it has something to do
-with my bash script or the testing file itself. I think it may be the bash script so I will include a screenshot below.
+with my bash script or the testing file itself. I will include a screenshot of the error I am getting below.
 ![Image](studenterror.jpeg)
 
 
