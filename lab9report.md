@@ -18,6 +18,7 @@ the commands for compiling and running Java files. When running files, do you ne
 ## 3. Response from Student
 Thank you, I was able to fix the bug. I was using `.*java` instead of `*.java`, and I forgot that I do not need the `.java` extension when running Java files. I believe that is why my tests
 were not running properly and why it was giving me that `java.lang.IllegalArgumentException: Could not find class [TestListExamples.java]` exception. All my tests are passing now.
+![Image](studentfix2.jpeg)
 ![Image](studentfix.jpeg)
 
 ## 4. Set Up
@@ -29,6 +30,7 @@ This is the bash script to run the tests that has bugs in it.
 ![Image](buggybash.jpeg)
 The command line that triggered the bug is `bash test.sh`
 To fix the bug, you need to change the `.*java` on line 2 to `*.java` and remove the `.java` at the end of `TestExamples.java` on line 3.
+![Image](studentfix2.jpeg)
 
 ## Part 2
 I learned a lot from lab in the second half of this quarter. An experience that stood out to me is learning vim. During week 7 lab when we did the `vim` tutorial, I found myself a little
